@@ -1,0 +1,103 @@
+.login{
+    // background:yellowgreen;
+    height: 100%;
+    width: 100%;
+    background-image:url('../../../../assets/img/login-b2.gif');
+    background-size:100% 100%;
+}
+.login .repeat{
+    height: inherit;
+    width: 100%;
+    background-image: url('../../../../assets/img/login-b1.png');
+    background-size: 100% 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.login .repeat .content{
+    height: 553px;
+    width: 1089px;   
+    background:whitesmoke;
+    display: flex;
+}
+.login .repeat .content .img{
+    height: 100%;
+    width: 60%;
+    background-image: url('../../../../assets/img/login.jpg');
+    background-size: 100% 100%;
+}
+
+.sys-title{
+    display: flex;
+    justify-content: center;
+    height: 66px;
+    width: 100%;
+    font-size: 38px;
+    color: #1f4069;
+    margin-top: 40px; 
+    font-weight: 500;
+    position: relative;
+}
+
+.psw{
+    margin-left: 50%;
+}
+
+.login-form{
+    width: 40%;
+    height: 100%;
+    padding-bottom:20px;
+    display: flex;
+    align-self: flex-start;
+    justify-items: center;
+    align-content: center;
+    flex-direction: column;
+}
+.login-window-row{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    // background: chocolate;
+    margin-top: 3%;
+    line-height: 23px;
+}
+.txt{
+    border: 0px;
+    border-bottom: 1px solid #b1b1b1;
+    background: transparent;
+}
+.ant-icon{
+    position: relative;
+}
+.icon{
+    top: 38%;
+    position: absolute; 
+}
+input::-webkit-input-placeholder {
+    color: rgb(59, 59, 59) !important;
+    font-size: 16px;
+    }
+[nz-input]{
+    height: 50px;
+    width: 300px;
+    line-height: 100%;
+    padding: 5px 30px;
+    padding-top:15px;
+    opacity: 0.8;
+    /* font-size: 16px; */
+}
+[nz-button]{
+    width: 300px;
+    border-radius: 5px;
+    height: 40px;
+    left:-28px;
+    top: 5px;
+
+}
+.denglu{ 
+    background-color: #1f4069;
+    color:#fff;
+    border: none;
+    margin-top: 10%;
+}
+  .denglu:hover, .denglu:focus{color: #FFF !important;background-color: #0069b4 !important;}

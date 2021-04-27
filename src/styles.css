@@ -1,1 +1,50 @@
-/* You can add global styles to this file, and also import other style files */
+.app{
+  width: 100%;
+  height: calc(100% - 160px);
+  margin-top: 80px;
+  padding: 15px;
+  background-image:url('assets/img/bk.png');
+  background-size:100% 100%;
+}
+.contents{
+    height: calc(100% - 160px);
+    width: 100%;
+    background-image:url('assets/img/login-b2.gif');
+    background-size:100% 100%;
+    color: #fff;
+}
+.contents1{
+  background: #fff;
+  color:#000;
+}
+nz-header {
+    position: fixed;
+    width: 100%;
+  }
+nz-sider{
+    position: fixed;
+  }
+nz-footer {
+    position: fixed;
+    width: 100%;
+    bottom: 0px;
+}
+.ant-menu-dark.ant-menu-dark:not(.ant-menu-horizontal) .ant-menu-item-selected, .ant-menu-submenu-popup.ant-menu-dark .ant-menu-item-selected, .ant-menu.ant-menu-dark .ant-menu-item-selected{
+    background: transparent;
+}
+.ant-layout-footer{
+padding: 10px;
+}
+@media screen and (max-width: 1024px) {
+  .gutter-row-f{
+    padding: 5px !important;
+    font-size: 18px !important;
+    font-weight: 500 !important;
+  }
+  .ant-detail{
+    width: 40% !important;
+}
+.icons{
+  margin-top:0px !important;
+}
+}

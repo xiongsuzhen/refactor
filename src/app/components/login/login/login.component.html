@@ -1,0 +1,48 @@
+<div class="login">
+  <div class="repeat">
+    <div class="content">
+      <div class="img">
+      </div>
+      <div class="login-form">
+         <div class="sys-title" >
+          {{sysName}}
+          </div>
+        <div nz-row class="login-window-row">
+          <form nz-form>
+            <nz-form-item>
+              <nz-form-control [nzSpan]="14">
+                  <nz-input-group class="ant-icon">
+                    <svg t="1618990342501" class="icon" viewBox="0 0 1032 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1145" width="20" height="20"><path d="M494.870476 507.635572c160.939766 0 291.404485-111.604041 291.404485-249.237064 0-137.664224-130.464718-249.229265-291.404485-249.229265-160.924166 0-291.412285 111.56504-291.396684 249.229265 0 137.633024 130.472518 249.237065 291.404485 249.237064zM628.455241 590.737994H385.59087c-207.888657 0-376.433535 144.122719-376.433535 321.910733v20.779506c0 72.665868 168.544878 72.736069 376.433535 72.736069H628.455241c207.865256 0 376.402334-2.683239 376.402334-72.736069v-20.771705c0-177.795814-168.521478-321.918533-376.402334-321.918534z" p-id="1146" fill="#707070"></path></svg>                    
+                    <input class="txt" type="text" nz-input name="userName" [(ngModel)]="userName"  placeholder="请输入账号" />
+                  </nz-input-group>
+              </nz-form-control>
+            </nz-form-item >
+          </form>
+      </div>
+      <div nz-row class="login-window-row">
+          <form nz-form>
+            <nz-form-item>
+              <nz-form-control [nzSpan]="14">
+                  <nz-input-group>
+                    <svg t="1618991711196" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2115" width="20" height="20"><path d="M509 65c117.084 0 212 94.916 212 212v57h63c70.692 0 128 57.308 128 128v368c0 70.692-57.308 128-128 128H240c-70.692 0-128-57.308-128-128V462c0-70.692 57.308-128 128-128h57v-57c0-117.084 94.916-212 212-212z m2 476c-17.673 0-32 14.327-32 32v144c0 17.673 14.327 32 32 32 17.673 0 32-14.327 32-32V573c0-17.673-14.327-32-32-32z m-2-412c-81.738 0-148 66.262-148 148v57h296v-57c0-81.738-66.262-148-148-148z" fill="#707070" p-id="2116"></path></svg>
+                    <input class="txt" type="password" nz-input name="password" 
+                      [(ngModel)]="password"  placeholder="请输入密码" (keyup)="onKeyup($event)"/>
+                  </nz-input-group>
+              </nz-form-control>
+            </nz-form-item >
+          </form>
+      </div>
+      <div nz-row class="login-window-row">
+        <label nz-checkbox [(ngModel)]="checked" class="psw">记住密码</label>
+        <ng-container *ngIf="loginFail" class="fail-tips">
+          <span style="color:#d32a2a;margin-left: 80px;">用户名/密码不对</span>
+          
+        </ng-container>
+      </div>
+      <div nz-row class="login-window-row">
+          <button class="denglu" nz-button  nzSize="large" (click)="doLogin()">登录</button>
+      </div>
+      </div>
+    </div>
+  </div>
+</div>
